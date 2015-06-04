@@ -30,8 +30,8 @@ read_data <- function(){
         pw_data$Date <- as.Date(pw_data$Date, "%d/%m/%Y")
         # concatenate Date and Time columns and convert it to adequate
         # datetime format
-        pw_data$Time <- strptime( paste(pw_data$Date, pw_data$Time, sep = " "), 
-                               "%Y-%m-%d %H:%M:%S" )
+        pw_data$Time <- strptime(paste(pw_data$Date, pw_data$Time, sep = " "), 
+                                 "%Y-%m-%d %H:%M:%S")
         
         return(pw_data)
 }
